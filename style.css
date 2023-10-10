@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 243, 227);
+    margin: 0;
+}
+
+.logo_sect {
+    padding-top: 2.8%;
+    height: 0;
+}
+
+
+img {
+    margin-top: 0;
+    margin-left: 0;
+    width: 160px;
+}
+
+h1 {
+    color:#0c3c70;
+    margin-bottom: 2%;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+h3 {
+    padding-top: -40%;
+}
+
+h6 {
+    line-height: .1;
+  }
+
+
+.header {
+    position: relative;
+    padding-top: 2%;
+    padding-bottom: .3%;
+    color:#204e86;
+    background-image: url("/Users/felixsong/Desktop/coding-tufts/WebP/Midterm/banner.png");
+    background-size: 100%;
+    height: 800px;
+}
+
+
+#logo_home {
+    width: 10%;
+    padding: .5%;
+    padding-top: 1%;;
+    padding-bottom: 0%;
+    position: relative;
+  }
+
+.header h1 {
+    font-size: 40px;
+    line-height: 50px;
+    padding-top: 30%;
+    padding-left: 5%;
+    
+}
+
+
+.nav {
+    overflow:hidden;
+    background-color: #6fbcba;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav a {
+    float: left; 
+    display: block;
+    color:antiquewhite;
+    text-align: center;
+    padding-inline-start: 10%;
+    padding: 1%;
+    text-decoration: none;  
+}
+
+.nav a:hover {
+    background-color: #bad2d6;
+    color:white;
+}
+
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left_text {
+    flex: 40%;
+    background-color:#bad2d6d2;
+}
+
+.left_circle {
+    margin-inline-start: 7%;
+    max-width:fit-content;
+    flex: 30%;
+    height: 500px;
+    width: 500px;
+    background-color:rgba(250, 235, 215, 0.519);
+    border-radius: 50%;
+}
+
+.purpose_head {
+    padding-left: 35%;
+    padding-top: 10%;
+}
+
+.purpose_body {
+    padding-left: 6%;
+    text-overflow: hidden;
+    text-indent: 5%;
+    line-height: 150%;
+}
+
+.right_img {
+    flex: 50%;
+    margin-left: 0;
+    background-color:#a1c3c9;
+    padding: 0px;
+}
+
+#image1 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0%;
+    width: 100%;
+}
+
+.whale_details {
+    padding: 20px;
+    text-align: center;
+    background:rgba(250, 235, 215);   
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background:rgba(250, 235, 215);
+  }
+
+  #icon_1 {
+    width:fit-content;
+  }
+
+  #icon_2 {
+    width: fit-content;
+  }
+
+  #icon_3 {
+    width: fit-content;
+  }
+
+  #icon_4 {
+    width: fit-content;
+  }
