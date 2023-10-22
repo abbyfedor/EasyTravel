@@ -9,11 +9,6 @@ body {
 }
 
 
-.logo_sect {
-    padding-top: 2.8%;
-    height: 0;
-}
-
 
 img {
     margin-top: 0;
@@ -50,14 +45,6 @@ h6 {
 }
 
 
-#logo_home {
-    width: 10%;
-    padding: .5%;
-    padding-top: 1%;;
-    padding-bottom: 0%;
-    position: relative;
-  }
-
 .intro h1 {
     font-size: 40px;
     line-height: 50px;
@@ -66,12 +53,27 @@ h6 {
     
 }
 
+.header {
+    overflow:hidden;
+    background-color: #76c8f4;
+    position: fixed;
+    top: 0%;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    font-family: cursive;
+}
+.header a {
+    text-decoration: none;
+    color: black;
+}
 
 .nav {
     overflow:hidden;
     background-color: #6fbcba;
     position: fixed;
-    top: 0;
+    top: 50px;
     width: 100%;
 }
 
