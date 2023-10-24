@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>CS20_HW2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css">
+            body {
+                z-index: 1;
+            }
+            .header {
+                z-index: 2;
+            }
+            .nav {
+                z-index: 3;
+            }
+            #filter {
+                position: absolute;
+                top: 120px;
+                left: 100px;
+                width: 400px;
+            }
+            .box {
+                position: relative;
+                top: 0;
+                width: 50%;
+                display: block;
+                margin-bottom: 10px; 
+                background-color: #7ad0b6; 
+                padding: 10px; 
+                left: 20%;
+                line-height: 30px;
+            }
+            .box:nth-child(4) {
+                top: 140px;
+                left: 7%;
+                width: 50%;
+                background-color: rgb(241, 226, 206); 
+            }
+            .box:nth-child(5) {
+                top: 140px;
+                height: 150px;
+            }
+            .box:nth-child(6) {
+                top: 140px;
+                height: 150px;
+            }
+            .box:nth-child(7) {
+                top: 140px;
+                height: 150px;
+            }
+            .box:nth-child(8) {
+                top: 140px;
+                left: 7%;
+                width: 50%;
+                background-color: rgb(241, 226, 206); 
+            }
+            .box:nth-child(9) {
+                top: 140px;
+                height: 150px;
+            }
+            .box:nth-child(10) {
+                top: 140px;
+                height: 150px;
+            }
+            .box:nth-child(11) {
+                top: 140px;
+                height: 150px;
+            }
+            .box:nth-child(12) {
+                top: 140px;
+                height: 150px;
+            }
+            .box:nth-child(13) {
+                top: 140px;
+                height: 150px;
+            }
+            #img1 {
+                position: absolute;
+                left: -200px;
+                top: 0%;
+                width: 200px;
+                height: 100%;
+            }
+            
+            
+            
+
+        </style>
+    </head>
+    <body>
+
+        <div class="header">
+            <a class="logo" href="/Midterm-WebP/home.html">EasyTravel</a>
+        </div>
+
+        <div class="nav">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="travPkg.html">Travel Packages</a>
+            <a href="booking.html">Booking</a>
+            <a href="Blog.html">Blog</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <form id="filter">
+            <button type="button" section="all">All Flights</button>
+            <button type="button" section="national">National</button>
+            <button type="button" section="international">International</button>
+        </form>
+
+        <h1 class="box" section="national">National Flights</h1>
+        <div class="box" id="1" section="national">
+            Travel Locations: Kauai, Hawaii; Alberta, Canada <br>
+            Amount of people: 1 <br>
+            Price: 50$
+            <img src="/Midterm-WebP/alberta_canada.jpg" alt="alberta" id="img1" ></img>
+        </div>
+        <div class="box" id="2" section="national">
+            Travel Locations: Kauai, Hawaii; Alberta, Canada <br>
+            Amount of people: 2 <br>
+            Price: 100$
+            <img src="/Midterm-WebP/Kauai_Hawaii_USA.jpg" alt="Kauai" id="img1" ></img>
+        </div>
+        <div class="box" id="3" section="national">
+            Travel Locations: Kauai, Hawaii; Alberta, Canada <br>
+            Amount of people: Up to ten <br>
+            Price: 300$
+        </div>
+        <h1 class="box" section="international">International Flights</h1>
+        <div class="box" id="4" section="international">
+            Travel Locations: Santorini, Greece; Tropea, Italy; Vienna, Austria; Paris, France; High Peak, England; Morro de São Paulo, Brazil; Yanui Beach, Thailand<br>
+            Amount of people: 1 <br>
+            Price: 100$
+            <img src="/Midterm-WebP/Eiffel_tower_Paris.jpg" alt="Paris" id="img1" ></img>
+        </div>
+        <div class="box" id="5" section="international">
+            Travel Locations: Santorini, Greece; Tropea, Italy; Vienna, Austria; Paris, France; High Peak, England; Morro de São Paulo, Brazil; Yanui Beach, Thailand <br>
+            Amount of people: 2 <br>
+            Price: 200$
+            <img src="/Midterm-WebP/High Peak_Otterton_Sidmouth_UK.jpg" alt="Paris" id="img1" ></img>
+        </div>
+        <div class="box" id="6" section="international">
+            Travel Locations: Santorini, Greece; Tropea, Italy; Vienna, Austria; Paris, France; High Peak, England; Morro de São Paulo, Brazil; Yanui Beach, Thailand <br>
+            Amount of people: 4-6 (Family Package) <br>
+            Price: 400$
+            <img src="/Midterm-WebP/Morro_De_São_Paulo.jpg" alt="Paris" id="img1" ></img>
+        </div>
+        <div class="box" id="7" section="international">
+            Travel Locations: Santorini, Greece; Tropea, Italy; Vienna, Austria; Paris, France; High Peak, England; Morro de São Paulo, Brazil; Yanui Beach, Thailand <br>
+            Amount of people: Up to ten (Group Package) <br>
+            Price: 750$
+            <img src="/Midterm-WebP/santorini_greece.jpg" alt="Paris" id="img1" ></img>
+        </div>
+        <div class="box" id="8" section="international">
+            Travel Locations: Santorini, Greece; Tropea, Italy; Vienna, Austria; Paris, France; High Peak, England; Morro de São Paulo, Brazil; Yanui Beach, Thailand <br>
+            Amount of people: Up to 20 (Party Package) <br>
+            Price: 1500$
+            <img src="/Midterm-WebP/tropea_italy.jpg" alt="Paris" id="img1" ></img>
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const filterForm = document.getElementById("filter");
+                const buttons = filterForm.querySelectorAll("button");
+                const boxes = document.querySelectorAll(".box");
+
+                // Add click event listener to each filter button
+                buttons.forEach(function (button) {
+                    button.addEventListener("click", function () {
+                        const section = button.getAttribute("section");
+                        filterItems(section);
+                    });
+                });
+
+                function filterItems(section) {
+                    boxes.forEach(function (box) {
+                        const boxSection = box.getAttribute("section");
+                        if (section === "all" || section === boxSection) {
+                            box.style.display = "block";
+                        } else {
+                            box.style.display = "none";
+                        }
+                    });
+                }
+            });
+        </script>
+    </body>
+</html>
