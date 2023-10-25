@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Book Your Dream Holiday</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="booking.js"></script>
+    <style>
+    form {
+        width: 500px;
+        margin: 0 auto;
+        padding: 50px;
+    }
+
+    div.elem-group {
+        margin: 20px 0;
+    }
+
+    div.elem-group.inlined {
+        width: 49%;
+        display: inline-block;
+        margin-left: 1%;
+    }
+
+    label {
+        display: block;
+        padding-bottom: 10px;
+
+    }
+
+    input, select, textarea {
+        border-radius: 2px;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px;
+    }
+
+    div.elem-group.inlined input {
+        width: 95%;
+        display: inline-block;
+    }
+
+    textarea {
+        height: 250px;
+    }
+
+    hr {
+        border: 1px dotted #ccc;
+    }
+
+    button {
+        height: 50px;
+        background: #0c3c70;
+        border: none;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        border: 1px solid black;
+    }
+
+    .package-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+    }
+
+    .package-item {
+        width: 50%;
+        margin: 1%;
+        background-color: #bad2d6d2;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="intro">
+        <span id="intro_text">
+            <h1>Book Your Dream Holiday</h1>
+        </span>
+    </div>
+
+    <div class="header">
+        <a class="logo" href="/Midterm-WebP/home.html">EasyTravel</a>
+    </div>
+
+    <div class="nav">
+        <a href="home.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="travPkg.html">Travel Packages</a>
+        <a href="booking.html">Booking</a>
+        <a href="Blog.html">Blog</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <form action="reservation.php" method="post">
+        <div class="elem-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+        </div>
+        <div class="elem-group">
+            <label for="email">Your E-mail</label>
+            <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+        </div>
+        <div class="elem-group">
+            <label for="phone">Your Phone</label>
+            <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+        </div>
+        <hr>
+        <div class="elem-group inlined">
+            <label for="adult">Adults</label>
+            <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+        </div>
+        <div class="elem-group inlined">
+            <label for="child">Children</label>
+            <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+        </div>
+        <div class="elem-group inlined">
+            <label for="checkin-date">Check-in Date</label>
+            <input type="date" id="checkin-date" name="checkin" required>
+        </div>
+        <div class="elem-group inlined">
+            <label for="checkout-date">Check-out Date</label>
+            <input type="date" id="checkout-date" name="checkout" required>
+        </div>
+        <div class="elem-group">
+            <label for="room-selection">Select Room Preference</label>
+            <select id="room-selection" name="room_preference" required>
+                <option value="">Choose a Room from the List</option>
+                <option value="connecting">Connecting</option>
+                <option value="adjoining">Adjoining</option>
+                <option value="adjacent">Adjacent</option>
+            </select>
+        </div>
+        <hr>
+
+        <div class="elem-group">
+            <label for="room-selection">Select Location</label>
+            <select id="room-selection" name="room_preference" required>
+                <option value="">Choose a Location from the List</option>
+                <option value="Europe">Europe</option>
+            </select>
+        </div>
+        <hr>
+
+        <div class="elem-group">
+            <label for="message">Anything Else?</label>
+            <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+        </div>
+        <button type="submit">Make Booking</button>
+    </form>
+
+    <div class="footer">
+        <p><h2>EasyTravel &copy;</h2></p>
+        <p><h6>123 Ocean Blvd, Somerville MA, 02144, USA</h6></p>
+        <p><h6>+1 (123) 456-7890</h6></p>
+        <p><h6>EasyTravel@gmail.com | <a href="contact.html">Contact</a></h6>
+        </p>
+    </div>
+</body>
+</html>
