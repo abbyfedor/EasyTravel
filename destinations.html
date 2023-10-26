@@ -6,17 +6,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-
 scale=1">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+</script>
 <style>
     * {
         font-family: Georgia, 'Times New Roman', Times, serif;
     }
-    .dest_header {
+    #dest_header {
     position: relative;
     width: 100%;
     padding-top: 2%;
     padding-bottom: .3%;
     color:#204e86;
-    background-image: url("images_dest/Yanui_Beach_Phuket_Thailand.jpg");
+    /*
+    */
+    background-image: url("bannerDest/Yanui_Beach_Phuket_Thailand.jpg");
     background-size: 100%;
     height: 800px;
     }
@@ -39,7 +43,7 @@ scale=1">
         color:#ffffff;
     }
 
-    .dest_head {
+    .contentHead {
         color:rgb(255, 255, 255);
         padding-left: 12%;
         padding-top: 5%;
@@ -77,9 +81,31 @@ scale=1">
     }
 
 </style>
+
 </head>
 <body>
-    <div class="dest_header">
+    <script>
+        window.onload = function() {
+            // Array for slideshow (length is 7)
+            places = ["bannerDest/tropea_italy.jpg", "bannerDest/High Peak_Otterton_Sidmouth_UK.jpg",
+            "bannerDest/Kauai_Hawaii_USA.jpg", "bannerDest/jackson_hole_wyoming.jpg",
+            "bannerDest/alberta_canada.jpg", "bannerDest/Yanui_Beach_Phuket_Thailand.jpg",
+            "bannerDest/Eiffel_tower_Paris.jpg"
+        ];
+            
+        setInterval(changePlace, 5000);
+
+        function changePlace() {
+            i = Math.floor((Math.random() * 7));
+            console.log("place " + places[i])
+            console.log("i = " + i)
+            document.getElementById("dest_header").style.backgroundImage = "url('" + places[i] + "')";
+            }
+        }
+
+
+    </script>
+    <div class="dest_header" id="dest_header">
         <span id="dest_intro_text">
             <div id="destinations"> Destinations</div>
             <div id="sub_dest"> <br> Your dream destination is just a click away</br> </div>
@@ -105,7 +131,7 @@ scale=1">
     <div style="padding-top: 1%;" class="about">
     <div class="left_text" style="background-color: rgba(65, 102, 109, 0.682); padding-left: 20px;">
             <div class="left_circle" style="background-color: rgba(32, 102, 134, 0.556); border-radius: 10%;">
-                <div class="dest_head">Discover Paradise in Tropea, Italy: <br> Your Ultimate Vacation Destination</div>
+                <div class="contentHead">Discover Paradise in Tropea, Italy: <br> Your Ultimate Vacation Destination</div>
                 <div class="purpose_body" style="color:#ffffff; padding: 5%; padding-top: 2%; margin-left: 2%;">
                     Nestled along the rugged coastline of the Calabria region <br> in southern Italy, Tropea is a picturesque haven that promises a vacation unlike any other. With its pristine beaches, historical charm, and delectable cuisine, this hidden gem on the Tyrrhenian Sea offers an unforgettable experience for travelers seeking relaxation, adventure, and cultural exploration.
                     <br>
@@ -129,7 +155,7 @@ scale=1">
     <div class="left_img"><img src="images_dest/High Peak_Otterton_Sidmouth_UK.jpg" id="image1"></img></div>
     <div class="left_text" style="background-color: rgba(65, 102, 109, 0.682); padding-left: 20px;">
             <div class="left_circle" style="background-color: rgba(15, 119, 90, 0.716); border-radius: 10%;">
-                <div class="dest_head">High Peak, Sidmouth, UK:<br> Find Your Tranquil Retreat Amidst Natural Beauty</div>
+                <div class="contentHead">High Peak, Sidmouth, UK:<br> Find Your Tranquil Retreat Amidst Natural Beauty</div>
                 <div class="purpose_body" style="color:#ffffff; padding: 5%; padding-top: 2%; margin-left: 2%;">
                     Located in the heart of the captivating East Devon countryside, the High Peak Otterton Sidmouth area is a hidden gem that offers an idyllic vacation experience in the United Kingdom. Surrounded by lush landscapes, charming villages, and the stunning coastline of the Jurassic Coast, this tranquil retreat is the perfect escape for nature enthusiasts, hikers, history buffs, and those seeking respite from the hustle and bustle of daily life.
                     <br>
@@ -150,15 +176,15 @@ scale=1">
 </div>
 
 <div class="travel_details">
-    <p> <div id="quote">"To Travel is to Live"</div> </p>
-    <div id="subQuote"> -Hans Christian Anderson</div>
+    <p> <h1 id="quote">"To Travel is to Live"</h1> </p>
+    <h2 id="subQuote"> -Hans Christian Anderson</h2>
         
 </div>
 
 <div style="padding-top: 1%;" class="about">
     <div class="left_text" style="background-color: rgba(65, 102, 109, 0.682); padding-left: 20px;">
             <div class="left_circle" style="background-color: rgba(177, 165, 73, 0.593); border-radius: 10%; height: fit-content">
-                <div class="dest_head">Plan Your Dream Vacation in <br> Morro De São Paulo</div>
+                <div class="contentHead">Plan Your Dream Vacation in <br> Morro De São Paulo</div>
                 <div class="purpose_body" style="color:#ffffff; padding: 5%; padding-top: 2%; margin-left: 2%;">
                     Book a trip to the northeastern coast of Brazil and discover Morro De São Paulo: a tropical paradise that promises a vacation like no other. With its pristine beaches, lush jungles, and vibrant culture, this charming island destination is a haven for travelers seeking relaxation, adventure, and a taste of authentic Brazilian life.
                     <br>
@@ -182,7 +208,7 @@ scale=1">
     <div class="left_img"><img src="images_dest/Eiffel_tower_Paris.jpg" id="image1"></img></div>
     <div class="left_text" style="background-color: rgba(65, 102, 109, 0.682); padding-left: 20px;">
             <div class="left_circle" style="background-color: rgba(0, 46, 145, 0.716); border-radius: 10%; height: fit-content;">
-                <div class="dest_head">Discover the Magic of Paris:<br> A Journey Through Time and Artistry</div>
+                <div class="contentHead">Discover the Magic of Paris:<br> A Journey Through Time and Artistry</div>
                 <div class="purpose_body" style="color:#ffffff; padding: 5%; padding-top: 2%; margin-left: 2%;">
                     Welcome to the enchanting world of Paris, a city that needs no introduction. With its timeless beauty, rich history, and artistic allure, Paris has captured the hearts of travelers for centuries. From the iconic Eiffel Tower to the charming streets of Montmartre, there's something to captivate every traveler. Explore the many facets of this City of Light, a destination where the past and present merge seamlessly to create an unforgettable travel experience.
                     <br>                
@@ -194,10 +220,10 @@ scale=1">
     </div>
 </div>
 
-<div style="padding-top: 1%;" class="about">
+<div style="padding-top: 1%; padding-bottom: 1%;"class="about">
     <div class="left_text" style="background-color: rgba(65, 102, 109, 0.682); padding-left: 20px;">
             <div class="left_circle" style="background-color: rgba(141, 105, 26, 0.512); border-radius: 10%; height: fit-content">
-                <div class="dest_head">Exploring Vienna, Austria: <br> Where History and Culture Unite</div>
+                <div class="contentHead">Exploring Vienna, Austria: <br> Where History and Culture Unite</div>
                 <div class="purpose_body" style="color:#ffffff; padding: 5%; padding-top: 2%; margin-left: 2%;">
                     Welcome to Vienna, the enchanting Austrian capital known for its rich history, classical music heritage, and imperial charm. This captivating city nestled on the banks of the Danube River offers a unique blend of old-world elegance and modern vibrancy. From stately palaces to vibrant street markets, Vienna promises a memorable travel experience for history buffs, art enthusiasts, and anyone with an appetite for culture.
                     <br>  
@@ -208,12 +234,18 @@ scale=1">
     <div class="right_img"><img src="images_dest/vienna_austria.jpg" id="image1"></img></div>
 </div>
 
+<div class="travel_details" style="background-color: #8db9aba6;">
+    <p> <h1 id="quote">"Live your life by a compass, <br> not a clock"</h1> </p>
+    <h2 id="subQuote"> -Erica Jong</h2>
+        
+</div>
+
 
 <div style="padding-top: 1%;" class="about">
     <div class="left_img"><img src="images_dest/Kauai_Hawaii_USA.jpg" id="image1"></img></div>
     <div class="left_text" style="background-color: rgba(65, 102, 109, 0.682); padding-left: 20px;">
             <div class="left_circle" style="background-color: rgba(15, 119, 90, 0.716); border-radius: 10%; height:fit-content">
-                <div class="dest_head">Nature Beyond Imagination: <br> Kauai, Hawaii</div>
+                <div class="contentHead">Nature Beyond Imagination: <br> Kauai, Hawaii</div>
                 <div class="purpose_body" style="color:#ffffff; padding: 5%; padding-top: 2%; margin-left: 2%;">
                     Nestled in the heart of the Hawaiian archipelago lies Kauai, the Garden Isle, a tropical wonderland that beckons travelers with its lush landscapes, pristine beaches, and a spirit of adventure. This island is a haven for nature enthusiasts, beach bums, and anyone seeking a slice of paradise. Welcome to Kauai, where your dreams of an idyllic Hawaiian escape become a vibrant reality.
                     <br>
@@ -229,6 +261,28 @@ scale=1">
             </div>
     </div>
 </div>
+
+<div style="padding-top: 1%;" class="about">
+    <div class="left_text" style="background-color: rgba(65, 102, 109, 0.682); padding-left: 20px;">
+            <div class="left_circle" style="background-color: rgba(97, 170, 185, 0.664); border-radius: 10%; height: fit-content">
+                <div class="contentHead" style="padding-left: 0%;">Experience the Natural Wonders of Yellowstone with a trip to Wyoming</div>
+                <div class="purpose_body" style="color:#ffffff; padding: 5%; padding-top: 2%; margin-left: 2%;">
+                    Welcome to the pristine wilderness of Yellowstone National Park and the charming mountain town of Jackson Hole, Wyoming. Nestled in the heart of the Rocky Mountains, this region offers an unparalleled travel experience for nature enthusiasts, adventure seekers, and anyone looking to escape into the wild beauty of the American West.
+                    <br>  
+                    <div class="toDo_list">
+                        <div style="padding-bottom: 0%; margin-bottom: 0; text-align: center; font-variant: small-caps; font-weight: bold;">Things to do:</div>
+                        <ul style="padding-left: 4%;">
+                            <li style="padding-top: -2px;">Witness the awe-inspiring eruptions of geysers like Old Faithful and take in the vivid colors of geothermal pools, such as the Grand Prismatic Spring</li>  
+                            <li>Keep your eyes peeled for bison, elk, grizzly bears, wolves, and even the elusive mountain lion</li>
+                            <li>Whether a short boardwalk stroll or a multi-day backcountry trek, there's a trail for every level of adventurer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="right_img"><img src="images_dest/jackson_hole_wyoming.jpg" id="image1"></img></div>
+</div>
+
 
 <p>
     <div class="footer">
