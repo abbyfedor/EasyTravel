@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>CS20_HW2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css">
+            body {
+                z-index: 1;
+            }
+            .header {
+                z-index: 2;
+            }
+            .nav {
+                z-index: 3;
+            }
+            #filter {
+                position: absolute;
+                top: 120px;
+                left: 100px;
+                width: 400px;
+            }
+            .box {
+                position: relative;
+                top: 0;
+                width: 45%;
+                display: block;
+                margin-bottom: 10px; 
+                background-color: #acd5c9; 
+                padding: 10px; 
+                left: 23%;
+                line-height: 30px;
+            }
+            .box:nth-child(4) {
+                top: 140px;
+                left: 7%;
+                width: 50%;
+                background-color: rgb(241, 226, 206); 
+            }
+            .box:nth-child(5) {
+                top: 140px;
+                height: 150px;
+            }
+            .box:nth-child(6) {
+                top: 140px;
+                height: 150px;
+            }
+            .box:nth-child(7) {
+                top: 140px;
+                height: 150px;
+            }
+            .box:nth-child(8) {
+                top: 140px;
+                left: 7%;
+                width: 50%;
+                background-color: rgb(241, 226, 206); 
+            }
+            .box:nth-child(9) {
+                top: 140px;
+                height: 150px;
+            }
+            .box:nth-child(10) {
+                top: 140px;
+                height: 150px;
+            }
+            .box:nth-child(11) {
+                top: 140px;
+                height: 150px;
+            }
+            .box:nth-child(12) {
+                top: 140px;
+                height: 150px;
+            }
+            .box:nth-child(13) {
+                top: 140px;
+                height: 150px;
+            }
+            #img1 {
+                position: absolute;
+                left: -200px;
+                top: 0%;
+                width: 200px;
+                height: 100%;
+            }
+            
+            #category {
+                font-weight: 900;
+                font-variant: small-caps;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="header">
+            <a class="logo" href="home.html">EasyTravel</a>
+        </div>
+
+        <div class="nav">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="travPkg.html">Travel Packages</a>
+            <a href="booking.html">Booking</a>
+            <a href="Blog.html">Blog</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <form id="filter">
+            <button type="button" section="all">All Flights</button>
+            <button type="button" section="national">National</button>
+            <button type="button" section="international">International</button>
+        </form>
+
+        <h1 class="box" section="national">National Flights</h1>
+        <div class="box" id="1" section="national" style="height:fit-content">
+            <span id="category">Travel Locations</span>: Kauai, Hawaii; Alberta, Canada <br>
+            <span id="category">Amount of people</span>: 1 <br>
+            <span id="category"> Price</span>: 50$ per adult, 25$ per child
+            <img src="alberta_canada.jpg" alt="alberta" id="img1" ></img>
+        </div>
+        <div class="box" id="2" section="national" style="height:fit-content">
+            <span id="category">Travel Locations</span>: Kauai, Hawaii; Alberta, Canada <br>
+            <span id="category">Amount of people</span>: 2 <br>
+            <span id="category">Price</span>: 50$ per adult, 25$ per child
+            <img src="Kauai_Hawaii_USA.jpg" alt="Kauai" id="img1" ></img>
+        </div>
+        <div class="box" id="3" section="national" style="height:fit-content">
+            <span id="category">Travel Locations</span>: Kauai, Hawaii; Alberta, Canada <br>
+            <span id="category">Amount of people</span>: Up to ten <br>
+            <span id="category">Price</span>: 40$ per adult, 20$ per child
+            <img src="jackson_hole_wyoming.jpg" alt="Paris" id="img1" ></img>
+        </div>
+        <h1 class="box" section="international">International Flights</h1>
+        <div class="box" id="4" section="international" style="height:fit-content" >
+            <span id="category">Travel Locations</span>: Santorini, Greece; Tropea, Italy; Vienna, Austria; Paris, France; High Peak, England; Morro de São Paulo, Brazil; Yanui Beach, Thailand<br>
+            <span id="category">Amount of people</span>: 1 <br>
+            <span id="category">Price</span>: 100$ per adult, 50$ child
+            <img src="Eiffel_tower_Paris.jpg" alt="Paris" id="img1" ></img>
+        </div>
+        <div class="box" id="5" section="international" style="height:fit-content">
+            <span id="category">Travel Locations</span>: Santorini, Greece; Tropea, Italy; Vienna, Austria; Paris, France; High Peak, England; Morro de São Paulo, Brazil; Yanui Beach, Thailand <br>
+            <span id="category">Amount of people</span>: 2 <br>
+            <span id="category">Price</span>: 100$ per adult, 50$ per child
+            <img src="High Peak_Otterton_Sidmouth_UK.jpg" alt="Paris" id="img1" ></img>
+        </div>
+        <div class="box" id="6" section="international" style="height:fit-content">
+            <span id="category"></span>Travel Locations: Santorini, Greece; Tropea, Italy; Vienna, Austria; Paris, France; High Peak, England; Morro de São Paulo, Brazil; Yanui Beach, Thailand <br>
+            <span id="category"></span>Amount of people: 4-6 (Family Package) <br>
+            <span id="category"></span>Price: 90$ per adult, 45$ per child
+            <img src="Morro_De_São_Paulo.jpg" alt="Paris" id="img1" ></img>
+        </div>
+        <div class="box" id="7" section="international" style="height:fit-content">
+            <span id="category">Travel Locations</span>: Santorini, Greece; Tropea, Italy; Vienna, Austria; Paris, France; High Peak, England; Morro de São Paulo, Brazil; Yanui Beach, Thailand <br>
+            <span id="category">Amount of people</span>: Up to ten (Group Package) <br>
+            <span id="category">Price</span>: 80$ per adult, 40$ per child
+            <img src="santorini_greece.jpg" alt="Paris" id="img1" ></img>
+        </div>
+        <div class="box" id="8" section="international" style="height:fit-content; margin-bottom: 15%;">
+            <span id="category">Travel Locations</span>: Santorini, Greece; Tropea, Italy; Vienna, Austria; Paris, France; High Peak, England; Morro de São Paulo, Brazil; Yanui Beach, Thailand <br>
+            <span id="category">Amount of people</span>: Up to 20 (Party Package) <br>
+            <span id="category">Price</span>: 75$ per adult, 35$ per child
+            <img src="tropea_italy.jpg" alt="Paris" id="img1" ></img>
+        </div>
+
+        
+<p>
+    <div class="footer" style="padding-top: 30px;">
+        <p> <h2>EasyTravel &copy;</h2> </p>
+        <p> <h6> 123 Ocean Blvd, Somerville MA, 02144, USA</h6></p>
+        <p> <h6>+1 (123) 456-7890</h6></p>
+        <p> <h6> EasyTravel@gmail.com |
+            <a href="contact.html">Contact</a></h6>
+        </p>
+    </div>
+</p>
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const filterForm = document.getElementById("filter");
+                const buttons = filterForm.querySelectorAll("button");
+                const boxes = document.querySelectorAll(".box");
+
+                // Add click event listener to each filter button
+                buttons.forEach(function (button) {
+                    button.addEventListener("click", function () {
+                        const section = button.getAttribute("section");
+                        filterItems(section);
+                    });
+                });
+
+                function filterItems(section) {
+                    boxes.forEach(function (box) {
+                        const boxSection = box.getAttribute("section");
+                        if (section === "all" || section === boxSection) {
+                            box.style.display = "block";
+                        } else {
+                            box.style.display = "none";
+                        }
+                    });
+                }
+            });
+        </script>
+    </body>
+</html>
