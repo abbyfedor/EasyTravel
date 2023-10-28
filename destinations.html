@@ -12,14 +12,16 @@ scale=1">
     * {
         font-family: Georgia, 'Times New Roman', Times, serif;
     }
+
+    a {
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
     #dest_header {
     position: relative;
     width: 100%;
     padding-top: 2%;
     padding-bottom: .3%;
     color:#204e86;
-    /*
-    */
     background-image: url("bannerDest/Yanui_Beach_Phuket_Thailand.jpg");
     background-size: 100%;
     height: 800px;
@@ -80,6 +82,27 @@ scale=1">
         font-weight: 500;
     }
 
+        #bookBttn {
+            background-color: #a3d1c3;;
+            border: 2px solid black;
+            border-radius: 5%;
+            margin-left: 78.5%;
+            color: black;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight:200;
+            text-align: center;
+            padding: 10px 25px;
+            text-align: center;
+            display: inline-block;
+            font-size: 20px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        #bookBttn:hover {
+            background-color: rgb(176, 225, 255);
+            color:white;
+        }
+
 </style>
 
 </head>
@@ -94,14 +117,20 @@ scale=1">
         ];
             
         setInterval(changePlace, 5000);
+        }
 
         function changePlace() {
-            i = Math.floor((Math.random() * 7));
-            console.log("place " + places[i])
-            console.log("i = " + i)
-            document.getElementById("dest_header").style.backgroundImage = "url('" + places[i] + "')";
+            var image = $('#dest_header');
+            image.fadeOut(1000)
+
+            i = Math.floor((Math.random() * 7));          
+            var nextImage = "url('" + places[i] + "')"; 
+
+            image.fadeOut(6000, function () {
+                image.css("background-image", nextImage);
+            image.fadeIn(1000);
+            });
             }
-        }
 
 
     </script>
@@ -109,15 +138,17 @@ scale=1">
         <span id="dest_intro_text">
             <div id="destinations"> Destinations</div>
             <div id="sub_dest"> <br> Your dream destination is just a click away</br> </div>
+            <br></br>
+            <a href="travPkg.html" id='bookBttn' >Book Now</a>
         </span>
     </div>
 
     <div class="header">
-        <a class="logo" href="/Midterm-WebP/home.html">EasyTravel</a>
+        <a class="logo" href="home.html" style="font-family: cursive;">EasyTravel</a>
     </div>
 
     <div class="nav">
-        <a href="home.html">Home</a>
+        <a href="home.html" font>Home</a>
         <a href="about.html">About Us</a>
         <a href="destinations.html">Destinations</a>
         <a href="travPkg.html">Travel Packages</a>
@@ -294,8 +325,6 @@ scale=1">
         </p>
     </div>
 </p>
-
-
 
 </body>
 </html>
