@@ -15,6 +15,11 @@
             .nav {
                 z-index: 3;
             }
+
+            .flightData {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+
             #filter {
                 position: absolute;
                 top: 120px;
@@ -31,6 +36,7 @@
                 padding: 10px; 
                 left: 23%;
                 line-height: 30px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
             }
             .box:nth-child(4) {
                 top: 140px;
@@ -88,6 +94,34 @@
                 font-weight: 900;
                 font-variant: small-caps;
             }
+
+            button {
+                background-color: #a3d1c3b9;;
+                border: 1px solid #0c3c70;
+                border-radius: 5%;
+                color: black;
+                text-align: center;
+                text-align: center;
+                display: inline-block;
+                font-weight: lighter;
+                font-size: 15px;
+                cursor: pointer;
+                text-decoration: none;
+            }
+
+            #filterTitle {
+                font-size: 17px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-weight: 300;
+                color:#0c3c70;
+                margin-right: 7px;
+                margin-top: -3%;
+                margin-bottom: 8px;
+            } 
+
+            form {
+                padding-bottom: 2%;
+            }
         </style>
     </head>
     <body>
@@ -105,66 +139,70 @@
             <a href="Blog.html">Blog</a>
             <a href="contact.html">Contact Us</a>
         </div>
+
         <form id="filter">
+            <div id="filterTitle">Find a destination: </div>
             <button type="button" section="all">All Flights</button>
             <button type="button" section="national">National</button>
             <button type="button" section="international">International</button>
+            <br><br>
         </form>
+        
+        <h1 class="box" section="national" style="font-variant: small-caps;">National Flights</h1>
+            <div class="box" id="1" section="national" style="height:fit-content; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                <span id="category">Travel Locations</span>: Alberta, Canada <br>
+                <span id="category">Amount of people</span>: 1 <br>
+                <span id="category"> Price</span>: 50$ per adult, 25$ per child
+                <img src="/Midterm-WebP/alberta_canada.jpg" alt="Alberta, Canada" id="img1" ></img>
+            </div>
+            <div class="box" id="2" section="national" style="height:fit-content">
+                <span id="category">Travel Locations</span>: Kauai, Hawaii <br>
+                <span id="category">Amount of people</span>: 2 <br>
+                <span id="category">Price</span>: 50$ per adult, 25$ per child
+                <img src="/Midterm-WebP/Kauai_Hawaii_USA.jpg" alt="Kauai, Hawaii" id="img1" ></img>
+            </div>
+            <div class="box" id="3" section="national" style="height:fit-content">
+                <span id="category">Travel Locations</span>: Yellowstone, Wyoming, USA <br>
+                <span id="category">Amount of people</span>: Up to ten <br>
+                <span id="category">Price</span>: 40$ per adult, 20$ per child
+                <img src="j/Midterm-WebP/ackson_hole_wyoming.jpg" alt="Wyoming, USA" id="img1" ></img>
+            </div>
 
-        <h1 class="box" section="national">National Flights</h1>
-        <div class="box" id="1" section="national" style="height:fit-content">
-            <span id="category">Travel Locations</span>: Kauai, Hawaii; Alberta, Canada <br>
-            <span id="category">Amount of people</span>: 1 <br>
-            <span id="category"> Price</span>: 50$ per adult, 25$ per child
-            <img src="/Midterm-WebP/alberta_canada.jpg" alt="alberta" id="img1" ></img>
-        </div>
-        <div class="box" id="2" section="national" style="height:fit-content">
-            <span id="category">Travel Locations</span>: Kauai, Hawaii; Alberta, Canada <br>
-            <span id="category">Amount of people</span>: 2 <br>
-            <span id="category">Price</span>: 50$ per adult, 25$ per child
-            <img src="/Midterm-WebP/Kauai_Hawaii_USA.jpg" alt="Kauai" id="img1" ></img>
-        </div>
-        <div class="box" id="3" section="national" style="height:fit-content">
-            <span id="category">Travel Locations</span>: Kauai, Hawaii; Alberta, Canada <br>
-            <span id="category">Amount of people</span>: Up to ten <br>
-            <span id="category">Price</span>: 40$ per adult, 20$ per child
-            <img src="/Midterm-WebP/jackson_hole_wyoming.jpg" alt="Paris" id="img1" ></img>
-        </div>
-        <h1 class="box" section="international">International Flights</h1>
-        <div class="box" id="4" section="international" style="height:fit-content" >
-            <span id="category">Travel Locations</span>: Santorini, Greece; Tropea, Italy; Vienna, Austria; Paris, France; High Peak, England; Morro de São Paulo, Brazil; Yanui Beach, Thailand<br>
-            <span id="category">Amount of people</span>: 1 <br>
-            <span id="category">Price</span>: 100$ per adult, 50$ child
-            <img src="/Midterm-WebP/Eiffel_tower_Paris.jpg" alt="Paris" id="img1" ></img>
-        </div>
-        <div class="box" id="5" section="international" style="height:fit-content">
-            <span id="category">Travel Locations</span>: Santorini, Greece; Tropea, Italy; Vienna, Austria; Paris, France; High Peak, England; Morro de São Paulo, Brazil; Yanui Beach, Thailand <br>
-            <span id="category">Amount of people</span>: 2 <br>
-            <span id="category">Price</span>: 100$ per adult, 50$ per child
-            <img src="/Midterm-WebP/High Peak_Otterton_Sidmouth_UK.jpg" alt="Paris" id="img1" ></img>
-        </div>
-        <div class="box" id="6" section="international" style="height:fit-content">
-            <span id="category"></span>Travel Locations: Santorini, Greece; Tropea, Italy; Vienna, Austria; Paris, France; High Peak, England; Morro de São Paulo, Brazil; Yanui Beach, Thailand <br>
-            <span id="category"></span>Amount of people: 4-6 (Family Package) <br>
-            <span id="category"></span>Price: 90$ per adult, 45$ per child
-            <img src="/Midterm-WebP/Morro_De_São_Paulo.jpg" alt="Paris" id="img1" ></img>
-        </div>
+            <h1 class="box" section="international" style="font-variant: small-caps";>International Flights</h1>
+            <div class="box" id="4" section="international" style="height:fit-content" >
+                <span id="category">Travel Locations</span>: Paris, France<br>
+                <span id="category">Amount of people</span>: 1 <br>
+                <span id="category">Price</span>: 100$ per adult, 50$ child
+                <img src="/Midterm-WebP/Eiffel_tower_Paris.jpg" alt="Paris, France" id="img1" ></img>
+            </div>
+            <div class="box" id="5" section="international" style="height:fit-content">
+                <span id="category">Travel Locations</span>: High Peak, England<br>
+                <span id="category">Amount of people</span>: 2 <br>
+                <span id="category">Price</span>: 100$ per adult, 50$ per child
+                <img src="/Midterm-WebP/High Peak_Otterton_Sidmouth_UK.jpg" alt="Sidmouth, UK" id="img1" ></img>
+            </div>
+            <div class="box" id="6" section="international" style="height:fit-content">
+                <span id="category">Travel Locations</span>: Morro de São Paulo, Brazil<br>
+                <span id="category">Amount of people</span>: 4-6 (Family Package) <br>
+                <span id="category">Price</span>: 90$ per adult, 45$ per child
+                <img src="/Midterm-WebP/Morro_De_São_Paulo.jpg" alt="São Paulo, Brazil" id="img1" ></img>
+            </div>
         <div class="box" id="7" section="international" style="height:fit-content">
-            <span id="category">Travel Locations</span>: Santorini, Greece; Tropea, Italy; Vienna, Austria; Paris, France; High Peak, England; Morro de São Paulo, Brazil; Yanui Beach, Thailand <br>
+            <span id="category">Travel Locations</span>: Santorini, Greece<br>
             <span id="category">Amount of people</span>: Up to ten (Group Package) <br>
             <span id="category">Price</span>: 80$ per adult, 40$ per child
-            <img src="/Midterm-WebP/santorini_greece.jpg" alt="Paris" id="img1" ></img>
+            <img src="/Midterm-WebP/santorini_greece.jpg" alt="Santorini, Greece" id="img1" ></img>
         </div>
         <div class="box" id="8" section="international" style="height:fit-content;">
-            <span id="category">Travel Locations</span>: Santorini, Greece; Tropea, Italy; Vienna, Austria; Paris, France; High Peak, England; Morro de São Paulo, Brazil; Yanui Beach, Thailand <br>
+            <span id="category">Travel Locations</span>: Tropea, Italy<br>
             <span id="category">Amount of people</span>: Up to 20 (Party Package) <br>
             <span id="category">Price</span>: 75$ per adult, 35$ per child
-            <img src="/Midterm-WebP/tropea_italy.jpg" alt="Paris" id="img1" ></img>
+            <img src="/Midterm-WebP/tropea_italy.jpg" alt="Tropea, Italy" id="img1" ></img>
         </div>
-
+        
         
 <p>
-    <div class="footer" style="margin-top: 15%;">
+    <div class="footer" style=" margin-top: 15%;">
         <p> <h2>EasyTravel &copy;</h2> </p>
         <p> <h6> 123 Ocean Blvd, Somerville MA, 02144, USA</h6></p>
         <p> <h6>+1 (123) 456-7890</h6></p>
