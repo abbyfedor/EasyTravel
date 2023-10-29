@@ -149,13 +149,13 @@ h6 {
 
 .subimage1 {
     position: absolute;
-    top: 50px;
+    bottom: 50px;
 }
 
 .subImage2 {
     position:absolute;
     width: 43%;
-    top: 25%;
+    bottom: 5%;
     left: 35%;
 
 }
@@ -163,7 +163,7 @@ h6 {
 .subImage3 {
     width: 13%;
     position:absolute;
-    top: 22%;
+    bottom: 5%;
     left: 63%;
 }
 
@@ -229,6 +229,16 @@ h6 {
     }
     .intro h1 {
         font-size: 20px;
+    }
+
+    .sub1 {
+        font-size: 8px;
+    }
+    .sub2 {
+        font-size: 8px;
+    }
+    .sub3 {
+        font-size: 8px;
     }
 
   }
