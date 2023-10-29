@@ -230,6 +230,9 @@ h6 {
     .intro h1 {
         font-size: 20px;
     }
+    .purpose_body {
+        font-size: 8px;
+    }
 
     .sub1 {
         font-size: 8px;
