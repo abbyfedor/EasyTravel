@@ -102,13 +102,12 @@ h6 {
     flex: 40%;
     background-color:#bad2d6d2;
 }
-
 .left_circle {
     margin-inline-start: 7%;
     max-width:fit-content;
     flex: 30%;
-    height: 500px;
-    width: 500px;
+    height: 100%;
+    width: 70%;
     background-color:rgba(250, 235, 215, 0.519);
     border-radius: 50%;
 }
@@ -150,13 +149,13 @@ h6 {
 
 .subimage1 {
     position: absolute;
-    top: 50px;
+    bottom: 50px;
 }
 
 .subImage2 {
     position:absolute;
     width: 43%;
-    top: 25%;
+    bottom: 5%;
     left: 35%;
 
 }
@@ -164,7 +163,7 @@ h6 {
 .subImage3 {
     width: 13%;
     position:absolute;
-    top: 22%;
+    bottom: 5%;
     left: 63%;
 }
 
@@ -220,4 +219,31 @@ h6 {
     position: relative;
     left: 61%;
     width: 100%;
+  }
+
+
+  @media only screen and (max-width: 900px) {
+    .nav {
+        font-size: 10px;
+        top: 34px;
+    }
+    .intro h1 {
+        font-size: 15px;
+    }
+    .purpose_body {
+        font-size: 8px;
+    }
+    .purpose_head {
+        font-size: 10px;
+    }
+    .sub1 {
+        font-size: 8px;
+    }
+    .sub2 {
+        font-size: 8px;
+    }
+    .sub3 {
+        font-size: 8px;
+    }
+
   }
