@@ -320,3 +320,35 @@ h1 {
     font-size: 18px;
 
 }
+
+@media only screen and (max-width: 900px) {
+    .nav {
+        font-size: 10px;
+        top: 34px;
+    }
+
+    #topPartText {
+        font-size: 15px;
+    }
+
+    .staffChart {
+        font-size: 10px;
+    }
+
+    .leftText {
+        font-size: 8px;
+    }
+
+    .rightText {
+        font-size: 8px;
+    }
+
+    .threeTestimonials {
+        font-size: 8px;
+    }
+
+    .rickRoll {
+        font-size: 8px;
+    }
+}
+        
