@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="abby_styles.css">
+<title>Blog Page</title>
+<meta name="viewport" content="width=device-width, initial-
+scale=1">
+</head>
+
+<body>
+
+    <div class="header">
+        <a class="logo" href="/Midterm-WebP/home.html">EasyTravel</a>
+    </div>
+
+    <div class="nav">
+        <a href="home.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="travPkg.html">Travel Packages</a>
+        <a href="booking.html">Booking</a>
+        <a href="Blog.html">Blog</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+<div class="nonheader">
+
+    <div class="introPart">
+        <div class="introText">
+        <h1>Still not sure? Hear it from our customers!</h1>
+        <h2>We have a blog available to all customers for them to share their 
+            experiences with Easy Travel. Feel free to browse through their 
+            accounts of their experiences!  </h2>
+        </div>
+    </div>
+
+    <div class="threeTestimonials">
+        <div class="firstTest">
+            <div class="first_icon">
+                <img src="spongebob.png" alt="Morocco Image">
+            </div>
+            <div class="first_text"> "My family and I used Easy Travel to book a vacation to Morocco and we 
+                couldn't be happier! We are a well traveled family, but going to Morocco was going to be tricky, even for us. 
+                We didn't know the best areas, how to connect with locals, or how to arrange transportation. Nobody in our family
+                speaks Arabic, and we were concerned about booking accomodations. With Easy Travel, everything was a 
+                breeze! We were able to book transportation to and from the airport without any trouble. 
+                Easy Travel connected us with nice hotels in our price range that were kid friendly and well located.
+                They suggested activities and an itinerary that suited my family's need. 
+                I genuinley cannot imagine doing this trip without Easy Travel. Love this service!"
+            </div>
+            <div class="feedbackButton">
+                <button class="thumbsupButton">
+                    <!-- <button style="width: 30px; height:30px"> -->
+                    <img src= "thumbsup.png" alt="Thumbs Up" style="width:30px; height:30px">
+                </button>
+                <span class="thumbCount">50</span>
+                <button class="thumbsdownButton">
+                    <!-- <button style="width: 30px; height:30px" > -->
+                    <img src="thumbsdown.png" alt="Thumbs Down" style="width:25px; height:25px">
+                </button>
+            </div>
+        </div>
+
+        <div class="secondTest">
+            <div class="second_icon">
+                <img src="patrick.png" alt="Europe Image">
+            </div>
+            <div class="second_text"> "We were looking to book a two week trip to Europe to visit France, Italy, and Spain.
+                Without Easy Travel, I don't know if I could have coordinated all the accomodations myself! We took trains
+                very frequently to different hotels all over the different countries and I could not imagine doing all that 
+                coordination myself! My family had an amazing time and I got to enjoy our trip without constantly having to worry
+                about getting from one place to the next. Easy Travel makes every trip amazing!"
+            </div>
+            <div class="feedbackButton">
+                <button class="thumbsupButton">
+                    <!-- <button style="width: 30px; height:30px"> -->
+                    <img src= "thumbsup.png" alt="Thumbs Up" style="width:30px; height:30px">
+                </button>
+                <span class="thumbCount">50</span>
+                <button class="thumbsdownButton">
+                    <!-- <button style="width: 30px; height:30px" > -->
+                    <img src="thumbsdown.png" alt="Thumbs Down" style="width:25px; height:25px">
+                </button>
+            </div>
+        </div>
+
+        <div class="thirdTest">
+        <div class="third_icon">
+            <img src="mrkrabs.png" alt="Thailand Image">
+        </div>
+
+        <div class="third_text"> "My wife and I used Easy Travel to book our honeymoon a few months back. We loved it!
+            I am quite a planner, so I didn't think I would need to use a travel agency. But when my wife suggested we go to Thailand, 
+            I knew I might need some help. Easy Travel helped us find local restaurants, street markets, and bars to give us 
+            the complete local experience. We loved Thailand and I will definitely be using Easy Travel again!"
+        </div>
+        <div class="feedbackButton">
+            <button class="thumbsupButton">
+                <img src= "thumbsup.png" alt="Thumbs Up" style="width:30px; height:30px">
+            </button>
+            <span class="thumbCount">25</span>
+            <button class="thumbsdownButton">
+                <img src="thumbsdown.png" alt="Thumbs Down" style="width:25px; height:25px">
+            </button>
+        </div>
+        </div>
+
+        <div class="fourthTest">
+        <div class="fourth_icon">
+            <img src="spongebob.png" alt="Brazil image">
+        </div>
+
+        <div class="fourth_text">
+            "My two friends and I used Easy Travel to plan a trip to Brazil and it went really smoothly!
+            We are not the best planners so we knew we would need some help. I am so glad that we used Easy Travel!
+            I have never worked with another service that was so easy to use. We ended up going for 10
+            days and Easy Travel gave us flights with affordable prices and lots of activities to do while we 
+            were there. I strongly reccomend using Easy Travel!"
+        </div>
+        <div class="feedbackButton">
+            <button class="thumbsupButton">
+                <!-- <button style="width: 30px; height:30px"> -->
+                <img src= "thumbsup.png" alt="Thumbs Up" style="width:30px; height:30px">
+            </button>
+            <span class="thumbCount">25</span>
+            <button class="thumbsdownButton">
+                <!-- <button style="width: 30px; height:30px" > -->
+                <img src="thumbsdown.png" alt="Thumbs Down" style="width:25px; height:25px">
+            </button>
+        </div>
+    </div>
+
+
+        <div class ="rickRoll">
+           <p id="RR_text"> To read through our whole blog, click this link <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">easytravelblog.com</a> </p>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    // Select all testimonial sections
+    
+    const testimonialSections = document.querySelectorAll('.firstTest, .secondTest, .thirdTest');
+        // const testimonialSections = document.querySelectorAll('.firstTest');
+
+
+    testimonialSections.forEach(section => {
+        const thumbsUpBtn = section.querySelector('.thumbsupButton');
+        const thumbsDownBtn = section.querySelector('.thumbsdownButton');
+        const thumbsUpCount = section.querySelector('.thumbCount');
+
+        let count = 25; // Initial count
+
+        // Function to update the count and display
+        const updateCount = () => {
+            thumbsUpCount.textContent = count;
+        };
+
+        // Thumbs-up event listener
+        thumbsUpBtn.addEventListener('click', () => {
+            count += 1;
+            updateCount();
+        });
+
+        // Thumbs-down event listener
+        thumbsDownBtn.addEventListener('click', () => {
+            count -= 1;
+            updateCount();
+        });
+
+        // Initial count display
+        updateCount();
+    });
+</script>
