@@ -56,6 +56,13 @@ body {
     color:white;
 }
 
+.footer {
+    padding: 20px;
+    text-align: center;
+    background:rgba(250, 235, 215);
+  }
+
+
 .nonheader {
     position: absolute;
     top: 100px;
