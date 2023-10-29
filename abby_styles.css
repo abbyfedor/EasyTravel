@@ -119,8 +119,9 @@ h1 {
 .staffChart {
     width: 100%;
     margin:auto;
-    border-collapse: collapse;
-    margin-bottom: 30px;
+    /* border-collapse: collapse; */
+    /* margin-bottom: 20px; */
+    margin-bottom: -150px;
 }
 
 .staffChart img {
@@ -145,6 +146,10 @@ h1 {
     padding-top: 20px;
 }
 
+/* .bottomPart{
+    padding-bottom: 20px;
+} */
+
 /*BLOG PAGE STYLING STARTS HERE*/
 
 .introPart {
@@ -158,8 +163,7 @@ h1 {
     max-width: 90%;
    margin: auto;
    border: 3px solid black;
-   margin-bottom: 20px;
-  /* padding-top: 100px; */
+   margin-bottom: -130px;
 
 }
 
