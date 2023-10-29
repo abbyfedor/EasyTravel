@@ -356,7 +356,21 @@ h1 {
         font-size: 8px;
     }
 
-    .threeTestimonials {
+    .introText {
+        font-size:8px;
+    }
+
+    .first_text {
+        font-size: 6px;
+    }
+
+    .second_text {
+        font-size: 6px;
+    }
+     .third_text {
+        font-size: 6px;
+    }
+     .fourth_text {
         font-size: 6px;
     }
 
