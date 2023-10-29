@@ -331,6 +331,17 @@ h1 {
         font-size: 15px;
     }
 
+    .middlePart {
+        font-size: 8px;
+    }
+
+    .bottomHead {
+        font-size: 8px;
+    }
+
+    .staffChar td {
+        font-size: 8px;
+
     .staffChart {
         font-size: 10px;
     }
