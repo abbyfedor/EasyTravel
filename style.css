@@ -102,13 +102,12 @@ h6 {
     flex: 40%;
     background-color:#bad2d6d2;
 }
-
 .left_circle {
     margin-inline-start: 7%;
     max-width:fit-content;
     flex: 30%;
-    height: 500px;
-    width: 500px;
+    height: 100%;
+    width: 70%;
     background-color:rgba(250, 235, 215, 0.519);
     border-radius: 50%;
 }
@@ -220,4 +219,16 @@ h6 {
     position: relative;
     left: 61%;
     width: 100%;
+  }
+
+
+  @media only screen and (max-width: 900px) {
+    .nav {
+        font-size: 10px;
+        top: 40px;
+    }
+    .intro h1 {
+        font-size: 20px;
+    }
+
   }
